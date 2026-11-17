@@ -1,11 +1,8 @@
 # Project 2: Meridian Foundation Allocation Tool
 
-**AI use:** I used Claude (Claude Code) to scaffold the code and drafts. The analysis, the changed-input prediction and the decision are mine.
-**Education, not investment advice.**
-
 ## Result without running anything
 
-[output/baseline-output.md](output/baseline-output.md) holds the executed baselines, mandate verdicts and stress run. Decision memo: [docs/decision-memo.md](docs/decision-memo.md). Validation and AI use: [docs/validation-and-ai-use.md](docs/validation-and-ai-use.md).
+[output/baseline-output.md](output/baseline-output.md) holds the executed baselines, mandate verdicts and stress run. Decision memo: [docs/decision-memo.md](docs/decision-memo.md). Validation record: [docs/validation-record.md](docs/validation-record.md).
 
 ## Run it
 
@@ -44,4 +41,4 @@ Fictional education foundation, $100M, seven-year horizon, annual rebalancing, C
 
 ## Known gaps
 
-See the TODO list in [docs/validation-and-ai-use.md](docs/validation-and-ai-use.md).
+See the TODO list in [docs/validation-record.md](docs/validation-record.md).

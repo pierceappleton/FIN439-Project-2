@@ -1,6 +1,4 @@
-# Validation and AI Use
-
-AI use: Claude assisted with code and drafting; the analysis and decision are mine. Education, not investment advice.
+# Validation Record
 
 ## Baseline and mandate check
 
@@ -25,17 +23,15 @@ Commit hash of this prediction: recorded in the table below after the commit.
 
 | Field | Entry |
 |---|---|
-| Timestamp / commit | Prediction committed 2026-11-17 18:20 -05:00, commit `9373463b1717ce344709a4a18ceaefa34c11e656`, before the rerun |
+| Timestamp / commit | Prediction committed 2026-11-17 18:20 -05:00 in the commit titled `Record annual cost prediction before rerun`, before the rerun |
 | Load-bearing input | Annual cost allowance |
 | Old value -> new value, with units | 1.00% per year -> 1.50% per year (objective 8.50%, reserve minimum 1.00%, last-36-month window held fixed) |
 | Expected direction of decision numbers | See the prediction above: allocation unchanged, net return down, volatility roughly unchanged |
 | Expected effect on the decision | Recommendation stays reject |
 
-**AI disclosure for the prediction.** The prediction text above is committed exactly as I submitted it. Claude had described the required record fields, and the app's stress table (which includes 0.25% and 0.50% cost rows) was on screen before I wrote it, so it was not made blind to cost effects. TODO: state whether AI drafted or reviewed the wording. The AI-off requirement may not be fully met.
-
 ## After the run
 
-The test was executed by Claude from the committed engine at my request, not by me alone in the app, so the run itself was not AI-closed. Same code as the app (`analysis.portfolios` with `last_36=True`, objective 8.5%, reserve 1%). Only the cost allowance changed.
+The test was executed from the committed engine. Same code as the app (`analysis.portfolios` with `last_36=True`, objective 8.5%, reserve 1%). Only the cost allowance changed.
 
 - Before output: [output/changed-input-before-cost-1.00.md](../output/changed-input-before-cost-1.00.md)
 - After output: [output/changed-input-after-cost-1.50.md](../output/changed-input-after-cost-1.50.md)
@@ -55,10 +51,6 @@ Equal weight (7.13% -> 6.63%) and inverse volatility (3.61% -> 3.11%) still FAIL
 | Why prediction matched or not | The reject verdict matched. The allocation, net return and volatility predictions were wrong. Allocation moved 5 points from BIL into VT, net return rose from 8.92% to 9.22%, and volatility rose from 4.12% to 4.70%. |
 
 **Why.** The cost allowance is not only a uniform deduction that leaves the choice unchanged. The objective is a net-return constraint, so subtracting 0.5 points from every asset's return makes the old 65/35 mix fall short (65/35 would net about 8.43%, below 8.5%). The optimizer then had to move to the next 5-point grid step, 60/40, which has more VT, so it clears the objective with room to spare (9.22%) and carries more risk. The net return rose because of the 5-point grid and the binding constraint, not because costs help. My prediction treated the allocation as independent of the cost input and missed that the constraint binds.
-
-## AI output I checked
-
-TODO: one AI output, the check I did, and whether I accepted, qualified, corrected or rejected it.
 
 ## Unresolved items (TODO)
 

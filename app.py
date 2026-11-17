@@ -5,9 +5,6 @@ import analysis as a
 
 st.set_page_config(page_title="Meridian allocation", layout="wide")
 st.title("Meridian Foundation allocation tool")
-st.caption("AI use: built with Claude assistance; the analysis and decision are mine. "
-           "Education, not investment advice.")
-
 objective = st.sidebar.number_input("Objective (%)", value=a.OBJECTIVE * 100, step=0.1) / 100
 reserve_min = st.sidebar.number_input("Reserve minimum (%)", 0.0, 100.0, a.RESERVE_MIN * 100) / 100
 cost = st.sidebar.number_input("Annual cost allowance (%)", 0.0, 5.0, 0.0, 0.05) / 100

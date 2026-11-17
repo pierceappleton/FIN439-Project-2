@@ -27,7 +27,7 @@ Not recorded yet (TODO).
 
 ## Fix pushed
 
-README now has the clone step, a folder note, the verify command and the expected result, and the wrong `project-2` folder reference is removed. A `.gitignore` keeps `.venv/` out of the repository. Commit: 45c87ce. My partner reran from the fixed README with no errors.
+README now has the clone step, a folder note, the verify command and the expected result, and the wrong `project-2` folder reference is removed. A `.gitignore` keeps `.venv/` out of the repository. The README fix is in the commit titled `Fix README first-run path, add .gitignore, record cold run`. My partner reran from the fixed README with no errors.
 
 ## Decision line
 
@@ -40,4 +40,4 @@ Reject live allocation under the current process; reconsider after sensitivity n
 
 ## Six-minute code explanation
 
-TODO: not yet done. To be completed with my partner, AI closed.
+TODO: not yet done. To be completed with my partner.

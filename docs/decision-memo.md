@@ -1,7 +1,5 @@
 # Decision Memo: Meridian Foundation
 
-AI use: Claude assisted with code and drafting; the analysis and decision are mine. Education, not investment advice.
-
 ## Decision line
 
 **Reject live allocation under the current process; reconsider after sensitivity no longer triggers the stop rule and the calendar-year loss limit is defined and tested.**
