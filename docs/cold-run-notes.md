@@ -31,9 +31,13 @@ README now has the clone step, a folder note, the verify command and the expecte
 
 ## Decision line
 
-TODO: one line (adopt, allocate to, rebalance, pilot or reject) with the condition that would reverse it.
+Reject live allocation under the current process; reconsider after sensitivity no longer triggers the stop rule and the calendar-year loss limit is defined and tested.
 
 ## Reflect
 
-1. What the cold run found that I could not see:
-2. What I will not touch before the deadline:
+1. What the cold run found that I could not see: the README had no clone step and pointed to a `project-2` folder that does not exist in the repository, and my Desktop path failed because it sits inside OneDrive. My partner's run, on their own computer, finished with no errors in 4 minutes 45 seconds after the README fix. (Draft from the recorded facts; rewrite in your own words.)
+2. What I will not touch before the deadline: TODO (your answer)
+
+## Six-minute code explanation
+
+TODO: not yet done. To be completed with my partner, AI closed.

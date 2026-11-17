@@ -2,9 +2,11 @@
 
 AI use: Claude assisted with code and drafting; the analysis and decision are mine. Education, not investment advice.
 
-## Decision line (draft, rewrite in your own words)
+## Decision line
 
-**Pilot** 60% BIL / 40% VT as a starting allocation (range roughly 50 to 70% BIL), **reverse** if a forward-looking return estimate for VT cannot be supported independently of this sample, or if the client defines a loss limit this mix breaches.
+**Reject live allocation under the current process; reconsider after sensitivity no longer triggers the stop rule and the calendar-year loss limit is defined and tested.**
+
+The 60/40 BIL/VT mix is the best constrained candidate (passes the checkable rules on the all-month window), but it is not adoptable: the last-36-month window moves it 25 points (40 points at an 8.5% objective), tripping the stop rule, and the calendar-year loss limit is undefined.
 
 ## Evidence (from [output/baseline-output.md](../output/baseline-output.md))
 
