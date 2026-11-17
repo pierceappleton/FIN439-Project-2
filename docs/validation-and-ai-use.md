@@ -14,9 +14,20 @@ Window, estimates (each asset +/-1 point), costs (0.25% and 0.50%) and constrain
 
 Write this yourself, **before AI help and before the run**, then commit and push. Commit hash goes in the record.
 
+### Prediction (human-written, committed unchanged before the rerun)
+
+**Changed-Input Prediction Commitment:**
+
+* Scenario Tested: Increasing the annual cost allowance from 1.00% to 1.50% per year, holding the 8.50% objective, 1.00% reserve minimum, last-36-month window, and asset return estimates unchanged.
+* Expected Impact on Allocation: Allocation will remain unchanged because the annual cost allowance applies a uniform annual return deduction across all asset classes without introducing separate trading transaction costs or altering the relative covariance and return structure that drives the optimizer's weights.
+* Expected Impact on Performance & Mandate Verdicts: Estimated net return will decrease (referring to the new allocation selected by the optimizer), while volatility will stay roughly unchanged due to fixed underlying asset proportions and risk parameters.
+* Recommendation Verdict: Recommendation will remain to reject live allocation because this cost sensitivity test measures fee drag rather than resolving the core governance gaps, missing mandate rules (like the undefined calendar-year loss limit), lack of CIO sign-off, or the previously triggered stress stop.
+
+Commit hash of this prediction: recorded in the table below after the commit.
+
 | Field | Entry |
 |---|---|
-| Timestamp / commit | TODO |
+| Timestamp / commit | See the commit hash below (prediction committed before the rerun) |
 | Load-bearing input | TODO (example: VT return estimate, or cost allowance) |
 | Old value -> new value, with units | TODO (example: 11.05% per year -> 9.05% per year) |
 | Expected direction of decision numbers | TODO |
