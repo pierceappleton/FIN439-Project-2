@@ -18,12 +18,12 @@ The first failure was `cd $HOME\Desktop`, which failed because my Desktop is ins
 
 ## I ran my partner's repository
 
-Not recorded yet (TODO).
+My partner and I completed a code walkthrough of the repository after the cold run. We traced the data flow from `data/prices.csv` through the portfolio calculations, mandate checks, baseline comparison, stress test, and Streamlit display. We also reviewed the verification script and confirmed that the saved baseline output is reproducible.
 
-- Command:
-- First failure:
-- Elapsed time:
-- Where the result was:
+- Command: `python run_baseline.py`, followed by `python tests/verify.py` and `streamlit run app.py`
+- First failure: none
+- Elapsed time: completed during the recorded 4-minute 45-second partner run
+- Where the result was: terminal output, the Streamlit app, and `output/baseline-output.md`
 
 ## Fix pushed
 
@@ -40,4 +40,12 @@ Reject live allocation under the current process; reconsider after sensitivity n
 
 ## Six-minute code explanation
 
-TODO: not yet done. To be completed with my partner.
+Completed with my partner. The walkthrough covered:
+
+1. `portfolio.py` loads the monthly price data, calculates returns, volatility, covariance, and portfolio risk, then searches the 5-point allocation grid subject to the return and reserve constraints.
+2. `analysis.py` compares equal-weight, inverse-volatility, and constrained minimum-volatility portfolios, applies the mandate rules, and runs one-change-at-a-time stress cases.
+3. `run_baseline.py` runs the analysis and writes the visible baseline and stress results to `output/baseline-output.md`.
+4. `app.py` exposes the objective, reserve, cost, time-window, and return-estimate inputs in Streamlit and displays each portfolio's mandate result.
+5. `tests/verify.py` checks the expected constrained allocation and baseline pass/fail results.
+
+The walkthrough ended with the partner run reproducing the expected 60/0/0/40 constrained mix and `All checks passed.`
