@@ -10,7 +10,7 @@ My partner and I ran the repository on my partner's computer. I had already run 
 - Result: the same as on my computer. Constrained mix 60/0/0/40, 6.61% return, 6.05% volatility, mandate PASS; equal weight and inverse volatility FAIL on return; `verify.py` printed `All checks passed.`
 - Where the result was found: printed by `run_baseline.py` and saved in `output/baseline-output.md`
 - First failure on my partner's computer: none
-- Elapsed time: not recorded (TODO)
+- Elapsed time: 4 minutes 45 seconds (partner's own timing)
 
 ## Earlier run on my computer (with my partner)
 
