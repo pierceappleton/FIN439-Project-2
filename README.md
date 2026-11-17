@@ -9,14 +9,20 @@
 
 ## Run it
 
-Windows PowerShell, from this folder (`project-2`):
+Windows PowerShell, Python 3.12 or later. Clone into any folder you can write to (your home folder works; `cd $HOME\Desktop` fails if your Desktop is inside OneDrive). The repo is private, so sign in to GitHub first.
 
 ```powershell
+cd $HOME
+git clone https://github.com/pierceappleton/FIN439-Project-2.git
+cd FIN439-Project-2
 python -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements.txt
 .\.venv\Scripts\python run_baseline.py
+.\.venv\Scripts\python tests/verify.py
 .\.venv\Scripts\python -m streamlit run app.py
 ```
+
+Expected: the constrained mix is 60 / 0 / 0 / 40 (BIL / IEF / LQD / VT) and passes the mandate, `verify.py` prints `All checks passed.`, and the app opens at http://localhost:8501.
 
 `run_baseline.py` prints the result and rewrites `output/baseline-output.md`. The Streamlit app lets you move the objective, reserve minimum, cost allowance, 36-month window and each return estimate, and shows a PASS or FAIL per mandate rule.
 
