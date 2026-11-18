@@ -36,7 +36,7 @@ Reject live allocation under the current process; reconsider after sensitivity n
 ## Reflect
 
 1. What the cold run found that I could not see: the README had no clone step and pointed to a `project-2` folder that does not exist in the repository, and my Desktop path failed because it sits inside OneDrive. My partner's run, on their own computer, finished with no errors in 4 minutes 45 seconds after the README fix. (Draft from the recorded facts; rewrite in your own words.)
-2. What I will not touch before the deadline: TODO (your answer)
+2. What I will not touch before the deadline: 
 
 ## Six-minute code explanation
 
