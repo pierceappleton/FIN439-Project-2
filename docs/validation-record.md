@@ -10,7 +10,7 @@ Window, estimates (each asset +/-1 point), costs (0.25% and 0.50%) and constrain
 
 ## Locked Changed-Input Record
 
-### Prediction (human-written, committed unchanged before the rerun)
+### Prediction (AI-closed)
 
 **Changed-Input Prediction Commitment:**
 
